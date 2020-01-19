@@ -1,0 +1,31 @@
+
+button{
+    margin:auto;
+    text-align:center;
+    padding:10px;
+
+}
+
+/*------------Place Holder---------------*/
+
+
+.placeholder{
+    background color: #E7E0DE;
+    margin:auto;
+    width:100%;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom:30px;
+}
+
+
+
+/*------------Footer---------------*/
+
+.footer{
+    color: #ccc;
+    margin:auto;
+    width:100%;
+    text-align: center;
+    font-size: 12px;
+    }
