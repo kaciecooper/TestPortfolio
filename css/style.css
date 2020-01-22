@@ -1,7 +1,4 @@
-#canvas {
-    width: 531px;
-    height: 438px;
-}
+
 
 
 /*------------------------------------------------*/
@@ -22,6 +19,7 @@ padding:10px;
     text-align:center;
     height: 150vh;
     width: 100%;
+    padding-top:50%;
 }
 
 .fullscreen4{
@@ -45,9 +43,19 @@ padding:10px;
 }
 
 .intro{
-    padding:50px;
-}
+    padding:100px;
+    text-align:center;
+    }
 
+ .badintro{
+    padding:100px;
+    text-align:center;
+    font-size:100;
+    }
+   
+.badplace{
+    padding:300px;
+}
 
 /*------------Choice Links---------------*/
 
@@ -109,7 +117,7 @@ h1{
 
 h2{
     font-family: jaf-lapture, serif;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-size:70px;
     line-height:10em;
@@ -134,17 +142,30 @@ blockquote{
     text-align:right;
     }
 
-.steve{ 
-    font-size:20px;
-
-}
-.you:hover{
+.how{ 
     font-size:100px;
-    line-height:2em;
-}
+    }
 
-.right:hover{font-size:150px;}
-.wrong:hover{font-size:150px;}
+
+.badday{
+    font-size:300px;
+    font-family: bureau-grot-extra-compressed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align:center;
+    }
+
+.everyday:hover{
+     font-size:80px;
+    }
+
+
+p{  font-family: jaf-lapture, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:40px;
+    text-align:center;
+    }
 
 /*------------Links and Buttons---------------*/
 
