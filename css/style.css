@@ -1,5 +1,15 @@
+#canvas {
+    background:url(http://www.topscratchcards.com/images/games/888ladies/scratchcard-winning-ticket.jpg);
+       
+    width: 531px;
+    height: 438px;
+}
 
-.fullscreen1, .fullscreen2, .fullscreen3, .fullscreen4  {
+
+/*------------------------------------------------*/
+
+
+.fullscreen2, .fullscreen3, .fullscreen4  {
 border: solid blue 2px;
 padding:10px;
 }
@@ -36,11 +46,28 @@ padding:10px;
     padding-left:50px;
 }
 
+.intro{
+    padding:50px;
+}
+
+
+/*------------Choice Links---------------*/
+
 .choice1{
     display:grid;
     grid-template-columns:1fr 1fr;
     padding-bottom:80px;
     }
+.choice1 a{
+    color:#000;
+    }  
+    
+.choice1 a:hover{
+    font-size:150px;
+    }  
+.choice1 a:visted{
+    color:#000;
+    }       
 
 /*------------Body Styles---------------*/
 
@@ -79,7 +106,7 @@ h1{
     font-family: jaf-lapture-subhead, serif;
     font-weight: 700;
     font-style: normal;
-    font-size:40px;
+    font-size:80px;
     }
 
 h2{
