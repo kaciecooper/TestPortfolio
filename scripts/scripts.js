@@ -11,18 +11,46 @@ $(document).ready(function(){
 
 $(window).scroll(function() {
                 var top = $(this).scrollTop();
-                if (top > 26) {
+                if (top > 57) {
                    $(".perspective").css("color", "black");
 
                 } 
                else {
-                   $(".perspective").css("color", "red");
+                   $(".perspective").css("color", "white");
+                 
+
 
                 }
 
  })
 
 
+var navTop = $('#perspective').offset().top;
+var navStop = $('#stop').offset().top;
+var lastMode = "absolute";
+
+$(window).scroll(function() {
+  var mode;
+  if ($(this).scrollTop() >= navTop) {
+    if ($(this).scrollTop() - navStop + $('#perspective').height() > 0)
+      mode = 'absolute';
+    else
+      mode = 'fixed';
+  } else {
+    mode = 'absolute';
+  }
+
+  if (lastMode !== mode) {
+    if (mode == 'fixed') {
+      $('#perspective').css('position', 'fixed');
+      $('#perspective').css('top', '0');
+    } else {
+      $('#perspective').css('position', 'absolute');
+      $('#perspective').css('top', navTop);
+    }
+    lastMode = mode;
+  }
+});
 
 //-----------------------
 
