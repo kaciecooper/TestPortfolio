@@ -19,13 +19,13 @@ h1{
     }
 
 h2{
-    font-family: jaf-lapture, serif;
-    font-weight: 700;
+    font-family: trade-gothic-next, sans-serif;
+    font-weight: 300;
     font-style: normal;
     font-size:70px;
-    text-align:center
-    
     }
+
+
 
 h3{
     font-family: farnham-display, serif;
@@ -36,7 +36,12 @@ h3{
     text-align:center
     }
 
-
+h4{
+    font-family: trade-gothic-next, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:50px;
+    }
 
 p{
   font-family: trade-gothic-next-condensed, sans-serif;
@@ -89,6 +94,21 @@ p{
   text-decoration:none;
   writing-mode: vertical-lr;
   z-index:100;
+ }
+
+
+.todaywas1, .todaywas2, .todaywas3{
+  font-family: trade-gothic-next-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding:30px;
+  font-size:100px;
+  color:#000;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  mix-blend-mode: difference;
+}
 
 
 
@@ -173,6 +193,49 @@ header{
   padding-top:600px;
   }
 
+.page2-1{
+  display:grid;
+  grid-template-columns: 10% 80% 10%;
+  border:black solid 2px;
+  height:100vh;
+}
+
+
+.black-bar{
+  width: 20%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  left: 50%;
+  top: 0;
+  height: 100vh;
+  background: #000;
+  }
+
+
+.page2-2{
+  display:grid;
+  grid-template-columns: 1fr;
+  border:black solid 2px;
+  height:100vh;
+  padding:40px;
+  line-height: 6em;
+  }
+
+.page2-3{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height:100vh;
+  margin:auto;
+  }
+
+.black-box1, .black-box2{
+  height:100vh;
+  width:100%;
+  background-color:#000;
+}
+
+
 /*------------Links and Buttons---------------*/
 .great, .terrible, :visited{
   color:#000;
@@ -193,7 +256,13 @@ hr{
   }
 
 
-
+.pg2-hr{
+  border: 4px solid #000;
+   text-align: center;
+   vertical-align: middle;
+   width:auto;
+   display:flex;
+}
 
 
 /*------------Footer---------------*/
@@ -297,9 +366,7 @@ hr{
 
 @media only screen and (max-width:1024px) {
 
-.badday{
-    font-size:120px;
-    }
+
 
 
 
@@ -307,9 +374,7 @@ hr{
 
 @media only screen and (min-width:1024px) {
 
-.badday{
-    font-size:300px;
-    }
+
 
 
 
