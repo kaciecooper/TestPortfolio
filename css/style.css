@@ -1,5 +1,5 @@
 
-.page-2{width:100%;
+.page-2, .page-3{width:100%;
 }
 /*------------Type---------------*/
 
@@ -41,6 +41,19 @@ h4{
     font-style: normal;
     font-size:40px;
     }
+
+h5{
+    font-family: farnham-display, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size:90px;
+    color:#FF8900;
+    }
+
+.good-h5{
+  font-style:normal;
+  text-decoration: underline #3333FF;
+  }
 
 p{
   font-family: trade-gothic-next-condensed, sans-serif;
@@ -105,6 +118,27 @@ p{
   z-index: 2;
   }
 
+
+  .pg3-million, .because-scroll{
+    color:#FF8900;
+  }
+
+
+  .beyond, .attitude-blue, .its-all, .theres-scroll{
+    color:#3333FF;
+  }
+
+  .pink-text{
+    color:#FFE3EB;
+  }
+
+  .not-true{
+    text-decoration: underline #FF8900;
+  }
+
+  .page3-6{
+    color:#fff;
+  }
 /*-----------DIVS----------------*/
 
 .header-div{  
@@ -174,7 +208,7 @@ p{
   padding-top:600px;
   }
 
-.great-box, .reverse-box{
+.great-box, .reverse-box, .home-box{
   border-left:solid 1px black;
   padding-top:600px;
   }
@@ -259,22 +293,59 @@ p{
   margin:auto;
   }
 
- .page2-10{
+ .page2-10, .page3-10{
   display:grid;
   grid-template-columns: 90% 10%;
   height:100vh;
   } 
 
-.redo-div{
+.redo-div {
   margin:auto;
   }
 
                /*-----------PAGE 3----------------*/
 
+.page3-1, .page3-2, .page3-3, .page3-4, .page3-5, .page3-6, .page3-7, .page3-8, .page3-9{
+  display:grid;
+  grid-template-columns: 1fr;
+  height:100vh;
+  padding:40px;
+  line-height: 6em;
+  border:solid blue 2px;
+  }
+
+.page3-10{
+  display:grid;
+  height:100vh;
+  padding:40px;
+  line-height: 6em;
+  border:solid blue 2px;
+  }
+
+.page3-1{
+  background-color:#FFE3EB;
+  }
+
+.pg2-todaywas1{
+  padding:40px;
+}  
+
+.page3-4{
+  background-color:#3333FF;
+  }
+
+.page3-6{
+  background-color:#FF8900;
+  }
+  
+.line-because{
+  display:grid;
+  grid-template-columns: 70% 30%;
+}
 
 
-/*------------Links and Buttons---------------*/
-.great, .terrible, .reverse :visited{
+  /*------------Links and Buttons---------------*/
+.great, .terrible, .reverse, .home :visited{
   color:#000;
   }
 
@@ -293,7 +364,7 @@ a:hover{
   color:#000;  
   }
 
-.great, .reverse{
+.great, .reverse, .home{
   font-family: trade-gothic-next-condensed, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -305,6 +376,20 @@ a:hover{
   }
 
 
+.because-scroll{
+  display:grid;
+  grid-template-columns: 80% 20%
+}
+
+.theres-scroll {
+  display:grid;
+  grid-template-columns: 40% 60%
+}
+
+
+.end-div{
+  margin:auto;
+}
 /*-----------LINES---------------------------*/
 hr{
   width:50%;
@@ -319,7 +404,21 @@ hr{
   width:auto;
   display:flex;
   }
+.pg3-4hr{
+  border: 4px solid #FF8900;
+  text-align: center;
+  vertical-align: middle;
+  width:auto;
+  display:flex;
+}
 
+.pg3-5hr{
+  border: 4px solid #FF8900;
+  text-align: center;
+  vertical-align: middle;
+  width:auto;
+  display:flex;
+}
 
 /*------------Footer---------------*/
 
