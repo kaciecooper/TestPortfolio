@@ -1,5 +1,6 @@
 
-
+.page-2{width:100%;
+}
 /*------------Type---------------*/
 
 h1{
@@ -25,8 +26,6 @@ h2{
     font-size:50px;
     }
 
-
-
 h3{
     font-family: farnham-display, serif;
     font-weight: 300;
@@ -49,7 +48,6 @@ p{
   font-style: normal;
   font-size:20px;
   writing-mode: vertical-lr;
-
   text-align: center;
   }
 
@@ -58,7 +56,6 @@ p{
   transform: rotate(180deg);
   color:#FF8900; 
   }
-
 
 .quote{
   color:white;
@@ -74,7 +71,6 @@ p{
  }
 
 
-
 .todaywas1, .todaywas2, .todaywas3{
   font-family: trade-gothic-next-condensed, sans-serif;
   font-weight: 700;
@@ -83,26 +79,21 @@ p{
   font-size:100px;
   color:#000;
   z-index: 2;
-}
+  }
 
 .goodness{
   text-decoration: underline;
-}
+  }
 
 
 .real-1, .real-2, .real-3{
   font-size:60px;
-}
+  }
 
 
 .reality, .creates, .attitude{
   font-weight:800;
-}
-
-/*  writing-mode: vertical-lr;*/
-
-
-
+  }
 
 
 /*-----------DIVS----------------*/
@@ -111,15 +102,13 @@ p{
   display:grid;
   grid-template-columns:10% 90%;
   height:100vh;
-
   }
 
 
 .title{
   border-right:solid black 1px;
   padding:30px;
-
- }
+  }
 
 .perspective{
   margin:auto;
@@ -168,14 +157,12 @@ p{
   border:solid black 1px;
   margin:auto;
   padding:10px;
-
   }
 
 .terrible-box{
   border-right:solid 1px black;
   text-align: right;
   padding-top:600px;
-
   }
 
 .great-box, .reverse-box{
@@ -186,10 +173,8 @@ p{
 .page2-1{
   display:grid;
   grid-template-columns: 10% 80% 10%;
-  border:black solid 2px;
   height:100vh;
-}
-
+  }
 
 .black-bar{
   width: 20%;
@@ -205,23 +190,21 @@ p{
 .badday-white1{
   height: 100vh;
   background-color:blue;
-}
+  }
 
 .badday-white2{
   height: 100vh;
   background-color:blue;
-}
+  }
 
 
 
 .page2-2, .page2-4, .page2-5, .page2-6, .page2-8{
   display:grid;
   grid-template-columns: 1fr;
-  border:black solid 2px;
   height:100vh;
   padding:40px;
   line-height: 6em;
-  width:100%;
   }
 
 .page2-3{
@@ -232,54 +215,48 @@ p{
 
 .black-box1, .black-box2{
   height:100vh;
-  width:100%;
   background-color:#000;
-}
+  }
 
 .bad-place{
   margin:auto;
-}
+  }
 
 .page2-7{
   height:100vh;
-  width:100%;
-  border:black solid 2px;
   padding:40px;
-}
+  }
 
 .reality-scroll-section{
   display:grid;
   grid-template-columns:  10% 80% 10%;
   height:100vh;
- }
+  }
 
 .reality-scroll-div{
- line-height: 7em;
- margin:auto;
-}
+  line-height: 7em;
+  margin:auto;
+  }
 
 .page2-9{
   display:grid;
-  width:100%;
   text-align:center;
-  border:blue solid 2px;
   height:100vh;
   }
+
 .good-strike{
-    margin:auto;
-}
+  margin:auto;
+  }
 
  .page2-10{
   display:grid;
   grid-template-columns: 90% 10%;
-  width:100%;
-  border:blue solid 2px;
   height:100vh;
   } 
 
 .redo-div{
   margin:auto;
-}
+  }
 
 .redo{
   font-family: trade-gothic-next-condensed, sans-serif;
@@ -289,20 +266,18 @@ p{
   font-size:100px;
   color:#000;
   z-index: 2;
-}
-
-
+  }
 
 
 
 /*------------Links and Buttons---------------*/
 .great, .terrible, .reverse :visited{
   color:#000;
-}
+  }
 
-a :hover{
+a:hover{
   color:red;
-}
+  }
 
 .terrible{
   font-family: trade-gothic-next-condensed, sans-serif;
@@ -312,11 +287,8 @@ a :hover{
   text-decoration:none;
   writing-mode: vertical-lr;
   z-index:100;
-  color:#000;
-   
+  color:#000;  
   }
-
-
 
 .great, .reverse{
   font-family: trade-gothic-next-condensed, sans-serif;
@@ -330,8 +302,6 @@ a :hover{
   }
 
 
-
-
 /*-----------LINES---------------------------*/
 hr{
   width:50%;
@@ -341,22 +311,22 @@ hr{
 
 .pg2-hr{
   border: 4px solid #000;
-   text-align: center;
-   vertical-align: middle;
-   width:auto;
-   display:flex;
-}
+  text-align: center;
+  vertical-align: middle;
+  width:auto;
+  display:flex;
+  }
 
 
 /*------------Footer---------------*/
 
 .footer{
-    color: #ccc;
-    margin:auto;
-    width:100%;
-    text-align: center;
-    font-size: 12px;
-    }
+  color: #ccc;
+  margin:auto;
+  width:100%;
+  text-align: center;
+  font-size: 12px;
+  }
 
 
 
@@ -371,7 +341,7 @@ hr{
 .badplace {
     -webkit-animation: tracking-out-contract 8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
             animation: tracking-out-contract 8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
+  }
 
 
 @-webkit-keyframes tracking-out-contract {
@@ -407,10 +377,9 @@ hr{
 .scroll-left {
  height: 700px;  
  overflow: hidden;
-}
+  }
+
 .scroll-left h2 {
-
-
  /* Apply animation to this element */  
  -moz-animation: scroll-left 3s linear infinite;
  -webkit-animation: scroll-left 3s linear infinite;
