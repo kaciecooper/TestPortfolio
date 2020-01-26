@@ -311,7 +311,6 @@ p{
   height:100vh;
   padding:40px;
   line-height: 6em;
-  border:solid blue 2px;
   }
 
 .page3-10{
@@ -319,7 +318,6 @@ p{
   height:100vh;
   padding:40px;
   line-height: 6em;
-  border:solid blue 2px;
   }
 
 .page3-1{
@@ -345,7 +343,7 @@ p{
 
 
   /*------------Links and Buttons---------------*/
-.great, .terrible, .reverse, .home :visited{
+.great, .terrible, .reverse, .home-link :visited{
   color:#000;
   }
 
@@ -364,7 +362,7 @@ a:hover{
   color:#000;  
   }
 
-.great, .reverse, .home{
+.great, .reverse, .home-link{
   font-family: trade-gothic-next-condensed, sans-serif;
   font-weight: 400;
   font-style: normal;
