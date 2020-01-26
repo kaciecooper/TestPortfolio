@@ -5,22 +5,6 @@ $(function() {
 
 
 
-$(window).scroll(function() {
-                var top = $(this).scrollTop();
-                if (top > 57) {
-                   $(".quote").css("color", "black");
-
-                } 
-               else {
-                   $(".quotebox-2").css("color", "white");
-                 
-
-
-                }
-
- })
-
-
 
 
 	
