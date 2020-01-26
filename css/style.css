@@ -95,6 +95,15 @@ p{
   font-weight:800;
   }
 
+.redo{
+  font-family: trade-gothic-next-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding:30px;
+  font-size:100px;
+  color:#000;
+  z-index: 2;
+  }
 
 /*-----------DIVS----------------*/
 
@@ -169,6 +178,8 @@ p{
   border-left:solid 1px black;
   padding-top:600px;
   }
+
+              /*-----------PAGE 2----------------*/
 
 .page2-1{
   display:grid;
@@ -258,15 +269,7 @@ p{
   margin:auto;
   }
 
-.redo{
-  font-family: trade-gothic-next-condensed, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  padding:30px;
-  font-size:100px;
-  color:#000;
-  z-index: 2;
-  }
+               /*-----------PAGE 3----------------*/
 
 
 
