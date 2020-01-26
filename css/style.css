@@ -71,12 +71,15 @@ p{
   }
 
 .quote{
-  color:white;
+  color:#000;
   text-align:center;
   z-index:99;
   padding-top:20px;
   }
 
+#animate2 {
+ color: #fff;
+}
 .how{
   font-family: farnham-display, serif;
   font-weight: 400;
@@ -200,7 +203,11 @@ p{
   border:solid black 1px;
   margin:auto;
   padding:10px;
+  opacity:0;
+  transform:translateY(50px);
+  transition:all 1s ease-out;
   }
+
 
 .terrible-box{
   border-right:solid 1px black;
@@ -212,6 +219,16 @@ p{
   border-left:solid 1px black;
   padding-top:600px;
   }
+
+ .bcg-parallax{
+  position:relative;
+ } 
+
+ .content-wrapper{
+  position:relative;
+  z-index:2;
+ }
+  
 
               /*-----------PAGE 2----------------*/
 
@@ -431,9 +448,11 @@ hr{
 
 
 
-
 /*------------ANIMATIONS---------------*/
 
+.fade-in{
+    opacity:1;
+}
 
 /*--------------------------------------*/
 
