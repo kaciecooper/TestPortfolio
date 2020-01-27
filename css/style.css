@@ -68,18 +68,16 @@ p{
 .upsidedown{
   transform: rotate(180deg);
   color:#FF8900; 
+  display:none;
   }
 
 .quote{
   color:#000;
   text-align:center;
-  z-index:99;
   padding-top:20px;
   }
 
-#animate2 {
- color: #fff;
-}
+
 .how{
   font-family: farnham-display, serif;
   font-weight: 400;
@@ -453,6 +451,38 @@ hr{
 .fade-in{
     opacity:1;
 }
+
+
+.panel {
+    height: 100%;
+    width: 100%;
+  }
+
+
+  #reveal2 {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+       -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+         -o-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transition: all 1s ease-in-out;
+       -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+         -o-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+  }
+  #reveal2.visible {
+    opacity: 1;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+  }
+
+
+
 
 /*--------------------------------------*/
 
