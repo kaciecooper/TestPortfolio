@@ -84,6 +84,10 @@ $(document).scroll(function() {
 					})
 					.addTo(controller);
 
+///////////////////////////////////////////////////////////////Quote Script
+
+
+
 
 // End of Your Code . Don't delete that line below!!
 });
