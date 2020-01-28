@@ -45,13 +45,13 @@ var controller = new ScrollMagic.Controller({
 		for (var i=0; i<slides.length; i++) {
 			new ScrollMagic.Scene({
 					triggerElement: slides[i],
-					duration:1,
+					duration:0,
 				})
 				.setPin(slides[i], {pushFollowers: false})
-				.addIndicators({
-					name:"panel change",
-					colorStart:"pink",
-			}) // add indicators (requires plugin)
+				//.addIndicators({
+				//	name:"panel change",
+				//	colorStart:"pink",
+			//}) // add indicators (requires plugin)
 				.addTo(controller);
 	
 		}
@@ -60,6 +60,7 @@ var controller = new ScrollMagic.Controller({
 			var duration = scene.duration();
 
 
+///////////////////////////////////////////////////////////////Page 1 Quote
+	
 
-// End of Your Code . Don't delete that line below!!
 });

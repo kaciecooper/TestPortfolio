@@ -1,5 +1,45 @@
 
 
+.quote, .quote3{
+  margin:auto;
+  color:#000;
+}
+
+.quote2{
+  position:sticky;
+  margin:auto;
+  color:#fff;
+  opacity: 0;
+    -webkit-transform: rotate(40deg) scale(0.5);
+       -moz-transform: rotate(40deg) scale(0.5);
+        -ms-transform: rotate(40deg) scale(0.5);
+         -o-transform: rotate(40deg) scale(0.5);
+            transform: rotate(40deg) scale(0.5);
+    -webkit-transition: all 0.8s ease-in-out;
+       -moz-transition: all 0.8s ease-in-out;
+        -ms-transition: all 0.8s ease-in-out;
+         -o-transition: all 0.8s ease-in-out;
+            transition: all 0.8s ease-in-out;
+  }
+
+.quote2.visible{
+  opacity: 1;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+  }
+
+
+
+
+.quote3{
+  position:sticky;
+  margin:auto;
+  color:#000;
+}
+/*------------Quote---------------*/
 .quotebox1 {
   background-color:#fff;
   color:red;
@@ -96,9 +136,8 @@ p{
 .quote{
   color:#000;
   text-align:center;
-  padding-top:20px;
+  padding-top:100px;
   }
-
 
 .how{
   font-family: farnham-display, serif;
@@ -114,7 +153,6 @@ p{
   padding:30px;
   font-size:100px;
   color:#000;
-  z-index: 2;
   }
 
 .goodness{
@@ -138,7 +176,6 @@ p{
   padding:30px;
   font-size:100px;
   color:#000;
-  z-index: 2;
   }
 
 
@@ -180,32 +217,11 @@ p{
   margin:auto;
   }
 
-.quotesection{
-  padding-top:30px;
-  }
-
 .quote-box1{
   background-color:;
   height:50vh;
   border-top:black solid 1px;
-  }
-
-.quote-box2{
-  background-color:#000;
-  height:50vh;
-  margin:0;
-  padding:0;
-  z-index:-1;
-  }
-
-.quote-box3{
-  background-color:;
-  height:50vh;
-  } 
-
-
-.quotesection{
-  padding-top:30px;
+  width:100%;
   }
 
 
@@ -235,14 +251,6 @@ p{
   padding-top:600px;
   }
 
- .bcg-parallax{
-  position:relative;
- } 
-
- .content-wrapper{
-  position:relative;
-  z-index:2;
- }
   
 
               /*-----------PAGE 2----------------*/
@@ -474,10 +482,6 @@ u, u.triple {
 
 
 /*------------ANIMATIONS---------------*/
-
-.fade-in{
-    opacity:1;
-}
 
 
   
