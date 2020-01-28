@@ -22,15 +22,7 @@ $(document).ready(function(){
 	.addTo(controller)
 });
 ////////////////////////////////////////////////////////////Page 1/2 Script
-var controller = new ScrollMagic.Controller();
 
-$(function () { // wait for document ready
-		// build scene
-		var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 850})
-						.setPin("#pin1")
-						
-						.addTo(controller);
-	});
 
 ////////////////////////////////////////////////////////////Page 2/2 Script
 
@@ -74,7 +66,7 @@ $(document).scroll(function() {
 	var controller = new ScrollMagic.Controller();
 
 	var animateElem = document.getElementById("animate2");
-	var scene = new ScrollMagic.Scene({triggerElement: "#trigger3", duration: 1200})
+	var scene = new ScrollMagic.Scene({triggerElement: "#trigger3", duration: 400})
 					.on("leave", function () {
 						// trigger animation by changing inline style.
 						animateElem.style.color = "#000";
@@ -83,10 +75,40 @@ $(document).scroll(function() {
 						// reset style
 						animateElem.style.color = "#fff";
 					})
-					.addIndicators({name: "3 - change inline style"}) // add indicators (requires plugin)
+					//.addIndicators({name: "3 - change inline style"}) // add indicators (requires plugin)
 					.addTo(controller);
 
 ///////////////////////////////////////////////////////////////Page 2 Panels
+
+var controller = new ScrollMagic.Controller({
+			globalSceneOptions: {
+				triggerHook: 'onLeave',
+				duration: "100%" // this works just fine with duration 0 as well
+				// However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
+				// Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
+			}
+		});
+
+		// get all slides
+		var slides = document.querySelectorAll("#panel");
+
+		// create scene for every slide
+		for (var i=0; i<slides.length; i++) {
+			new ScrollMagic.Scene({
+					triggerElement: slides[i]
+				})
+				.setPin(slides[i], {pushFollowers: false})
+				.addIndicators({
+					name:"panel change",
+					colorStart:"pink",
+			}) // add indicators (requires plugin)
+				.addTo(controller);
+	
+		}
+
+		// get the current duration value
+			var duration = scene.duration();
+
 
 
 // End of Your Code . Don't delete that line below!!

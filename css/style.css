@@ -1,4 +1,24 @@
 
+
+/*------------Panels---------------*/
+
+
+.panel1{
+  background-color:#fff;
+}
+
+.panel2{
+  background-color:#fff;
+}
+
+.panel3{
+  background-color:#fff;
+}
+
+
+/*------------Overallpage---------------*/
+
+
 .page-2, .page-3{width:100%;
 }
 /*------------Type---------------*/
@@ -160,7 +180,6 @@ p{
 
 .quotesection{
   padding-top:30px;
-  height:150vh;
   }
 
 .quote-box1{
@@ -190,10 +209,9 @@ p{
 
 
 .fullscreen1{
-  height:100vh;
   display:grid;
   grid-template-columns: 10% 80% 10%;
-  padding-top:40px;
+  
   }
 
 
@@ -689,7 +707,7 @@ u, u.triple {
 
 /*------------------------------------------------*/
 
-.section {
+.question-section {
   text-align:center;
   font-size: 3em;
 }
