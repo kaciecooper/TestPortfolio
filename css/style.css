@@ -52,7 +52,7 @@ h5{
 
 .good-h5{
   font-style:normal;
-  text-decoration: underline #3333FF;
+  
   }
 
 p{
@@ -433,6 +433,16 @@ hr{
   display:flex;
 }
 
+.pg2-hr{
+color:red;
+}
+
+
+/* -- triple threat -- */
+u, u.triple {
+  border-bottom: 24px double #3333FF ;
+  line-height: 2em;
+}
 /*------------Footer---------------*/
 
 .footer{
@@ -451,12 +461,6 @@ hr{
 .fade-in{
     opacity:1;
 }
-
-
-.panel {
-    height: 100%;
-    width: 100%;
-  }
 
 
   #reveal2 {
@@ -481,7 +485,134 @@ hr{
             transform: none;
   }
   
+.because-scroll {
+ height: 50px;  
+ overflow: hidden;
+ position: relative;
+}
+.because-scroll h2 {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: left;
 
+ /* Apply animation to this element */  
+ -moz-animation: example4 5s ease-out;
+ -webkit-animation: example4 5s ease-out;
+ animation: example4 5s ease-out;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example4 {
+ 0%   { -moz-transform: translateX(200%); }
+ 100% { -moz-transform: translateX(0%); }
+}
+@-webkit-keyframes example4 {
+ 0%   { -webkit-transform: translateX(200%); }
+ 100% { -webkit-transform: translateX(0%); }
+}
+@keyframes example4 {
+ 0%   { 
+ -moz-transform: translateX(200%); /* Firefox bug fix */
+ -webkit-transform: translateX(200%); /* Firefox bug fix */
+ transform: translateX(200%);     
+ }
+ 100% { 
+ -moz-transform: translateX(0%); /* Firefox bug fix */
+ -webkit-transform: translateX(0%); /* Firefox bug fix */
+ transform: translateX(0%); 
+ }
+}
+
+
+.theres-scroll {
+ height: 100%;  
+ overflow: hidden;
+ position: relative;
+}
+.theres-scroll h2 {
+ position: absolute;
+ width: 50%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(-50%);
+ -webkit-transform:translateX(-50%); 
+ transform:translateX(-100%);
+ /* Apply animation to this element */  
+ -moz-animation: example2 15s linear infinite;
+ -webkit-animation: example2 15s linear infinite;
+ animation: example2 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example2 {
+ 0%   { -moz-transform: translateX(-100%); }
+ 100% { -moz-transform: translateX(100%); }
+}
+@-webkit-keyframes example2 {
+ 0%   { -webkit-transform: translateX(-100%); }
+ 100% { -webkit-transform: translateX(100%); }
+}
+@keyframes example2 {
+ 0%   { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%);    
+ }
+ 100% { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%); 
+ }
+}
+/*
+.theres-scroll {
+ overflow: hidden;
+ position: relative;
+}
+
+.theres-scroll h2 {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position *//*
+ -moz-transform:translateX(10%);
+ -webkit-transform:translateX(10%);  
+ transform:translateX(10%);
+ /* Apply animation to this element */  /*
+ -moz-animation: example1 15s linear infinite;
+ -webkit-animation: example1 15s linear infinite;
+ animation: example1 15s linear infinite;
+}
+/* Move it (define the animation) *//*
+@-moz-keyframes example1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ /*-webkit-transform: translateX(100%); /* Firefox bug fix */
+ /*transform: translateX(100%);     
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ /*-webkit-transform: translateX(-100%); /* Firefox bug fix */
+ /*transform: translateX(-100%); 
+ }
+}
+
+*/
 /*--------------------------------------*/
 
 /* -------------------Bad place animation---------------------------*/

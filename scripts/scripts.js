@@ -70,23 +70,23 @@ $(document).scroll(function() {
 
 ///////////////////////////////////////////////////////////////Quote Script
 
+	// build scene
 	var controller = new ScrollMagic.Controller();
 
 	var animateElem = document.getElementById("animate2");
-	var scene = new ScrollMagic.Scene({triggerElement: "#trigger3", duration: 400})
-					.on("enter", function () {
+	var scene = new ScrollMagic.Scene({triggerElement: "#trigger3", duration: 1200})
+					.on("leave", function () {
 						// trigger animation by changing inline style.
+						animateElem.style.color = "#000";
+					})
+					.on("enter", function () {
+						// reset style
 						animateElem.style.color = "#fff";
 					})
-					.on("leave", function () {
-						// reset style
-						animateElem.style.backgroundColor = "";
-					})
+					.addIndicators({name: "3 - change inline style"}) // add indicators (requires plugin)
 					.addTo(controller);
 
-///////////////////////////////////////////////////////////////Quote Script
-
-
+///////////////////////////////////////////////////////////////Page 2 Panels
 
 
 // End of Your Code . Don't delete that line below!!
