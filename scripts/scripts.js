@@ -44,7 +44,8 @@ var controller = new ScrollMagic.Controller({
 		// create scene for every slide
 		for (var i=0; i<slides.length; i++) {
 			new ScrollMagic.Scene({
-					triggerElement: slides[i]
+					triggerElement: slides[i],
+					duration:1,
 				})
 				.setPin(slides[i], {pushFollowers: false})
 				.addIndicators({
