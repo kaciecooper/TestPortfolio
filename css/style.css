@@ -5,9 +5,14 @@
   }
 
 
-#panel{
-  background-color:white;
+.todaywasbad{
+ width:100%;
+ height:100%;
 }
+
+.todaywasbad {
+ 
+ }
 
 
 
@@ -236,20 +241,9 @@ p{
               /*-----------PAGE 2----------------*/
 
 .page2-1{
-  display:grid;
-  grid-template-columns: 10% 80% 10%;
   height:100vh;
-  }
-
-.black-bar{
-  width: 20%;
-  position: absolute;
-  transform: translate(-50%, 0);
-
-  left: 50%;
-  top: 0;
-  height:100%;
-  background: #000;
+  margin:auto;
+  background-color:blue;
   }
 
 /*.black-bar{
@@ -275,12 +269,13 @@ p{
 
 
 
-.page2-2, .page2-4, .page2-5, .page2-6, .page2-8{
+.page2-2, .page2-3, .page2-4, .page2-5, .page2-6, .page2-7, .page2-8, .page2-9, .page2-10{
   display:grid;
   grid-template-columns: 1fr;
   height:100vh;
   padding:40px;
   line-height: 6em;
+  background-color:#fff;
   }
 
 .page2-3{
