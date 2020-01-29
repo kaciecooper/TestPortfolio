@@ -91,13 +91,21 @@ var controller = new ScrollMagic.Controller({
 
 // define images
 	var images = [
-		"../../assets/img/example_imagesequence_01.png",
-		"../../assets/img/example_imagesequence_02.png",
-		"../../assets/img/example_imagesequence_03.png",
-		"../../assets/img/example_imagesequence_04.png",
-		"../../assets/img/example_imagesequence_05.png",
-		"../../assets/img/example_imagesequence_06.png",
-		"../../assets/img/example_imagesequence_07.png"
+		"images/badday-img1.png",
+		"images/badday-img2.png",
+		"images/badday-img3.png",
+		"images/badday-img4.png",
+		"images/badday-img5.png",
+		"images/badday-img6.png",
+		"images/badday-img7.png",
+		"images/badday-img8.png",
+		"images/badday-img9.png",
+		"images/badday-img10.png",
+		"images/badday-img11.png",
+		"images/badday-img12.png",
+		"images/badday-img13.png",
+		"images/badday-img14.png",
+		"images/badday-img15.png"
 	];
 
 	// TweenMax can tween any property of any object. We use this object to cycle through the array
