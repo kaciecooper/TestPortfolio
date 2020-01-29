@@ -1,5 +1,13 @@
 
+  #pg3-panel {
+    height: 100%;
+    width: 100%;
+  }
 
+
+#panel{
+  background-color:white;
+}
 
 
 
@@ -237,12 +245,23 @@ p{
   width: 20%;
   position: absolute;
   transform: translate(-50%, 0);
+
+  left: 50%;
+  top: 0;
+  height:100%;
+  background: #000;
+  }
+
+/*.black-bar{
+  width: 20%;
+  position: absolute;
+  transform: translate(-50%, 0);
   z-index: 1;
   left: 50%;
   top: 0;
   height: 100vh;
   background: #000;
-  }
+  }*/
 
 .badday-white1{
   height: 100vh;
@@ -315,12 +334,6 @@ p{
   margin:auto;
   }
 
-
-.pg2-todaywas1{
-  padding:40px;
-}  
-
-
                /*-----------PAGE 3----------------*/
 
 .page3-1, .page3-2, .page3-3, .page3-4, .page3-5, .page3-6, .page3-7, .page3-8, .page3-9{
@@ -330,7 +343,6 @@ p{
   padding:40px;
   line-height: 6em;
   }
-
 
 .page3-10{
   display:grid;
@@ -343,10 +355,9 @@ p{
   background-color:#FFE3EB;
   }
 
-
-.page3-2, .page3-3, .page3-5, .page3-7, .page3-8, .page3-9{
-    background-color:#fff;
-  }
+.pg2-todaywas1{
+  padding:40px;
+}  
 
 .page3-4{
   background-color:#3333FF;
