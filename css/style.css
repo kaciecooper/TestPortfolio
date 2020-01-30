@@ -1,17 +1,50 @@
+.because{
+  padding-top:600px;
+  height:0px;
+
+}
+
+
+
+.pg2that-line span {
+
+  position: relative;  
+}
+
+.pg2that-line span:after {
+  content: "";
+  position: absolute;
+  border-top: 4px black solid;
+  top:26px;
+  width: 250px;
+  margin-left: -2px;
+}
+
+
+
+
+
+
+.pg2-2-1{
+  padding:50px;
+}
+
+
+
 #panel{
   width:100%;
 }
 
-#fixedblack-box{
-  margin-top:0;
 
-}
 
 
 .fixed-blackbox{
   margin-top:0;
   background-color:#000;
-  height:150vh;
+  height:100%;
+  position:sticky;
+  margin:auto;
+  width:422px;
 }
 /*------------Quote---------------*/
 
@@ -249,31 +282,28 @@ p{
 
 
 
-.page2-3, .page2-4, .page2-5, .page2-6, .page2-7, .page2-8, .page2-9, .page2-10{
+.page2-4, .page2-5, .page2-6, .page2-7, .page2-8, .page2-9, .page2-10{
   display:grid;
   grid-template-columns: 1fr;
   height:100vh;
   padding:40px;
+  width:100%;
   line-height: 6em;
   background-color:#fff;
   }
 
 
-.page2-2{
+.page2-2, .page2-3{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height:100vh;
-  line-height: 6em;
+  height:180vh;
+  line-height: 3em;
+  width:100%;
   background-color:#fff;
-  
 }
-
-
 .page2-3{
-  display:grid;
-  grid-template-columns: 20% 60% 20%;
-  height:100vh;
-  }
+  height:20vh;
+}
 
 .black-box1, .black-box2{
   height:100vh;
@@ -282,6 +312,10 @@ p{
 
 .bad-place{
   margin:auto;
+  padding-top:600px;
+  height:0px;
+  font-size:30px;
+
   }
 
 .page2-7{
