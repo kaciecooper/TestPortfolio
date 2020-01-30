@@ -219,6 +219,7 @@ p {
 .blue{color:blue;}
 
 .page2-1,
+.page2-2,
 .page2-3,
 .page2-4,
 .page2-5,
@@ -230,7 +231,7 @@ p {
 {
   display: grid;
   grid-template-columns: 1fr;
-  height: 150vh;
+  height: 200vh;
   padding: 40px;
   line-height: 6em;
 }
@@ -243,10 +244,12 @@ p {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-
 }
 
-
+.page2-2{
+  margin:auto;
+  border:black solid 2px;
+}
 
 
 .page2-9{
@@ -260,6 +263,18 @@ p {
 .redo-div {
   margin:auto;
   }
+
+.pg2-text{
+  border:black solid 1px;
+  padding:50px;
+}
+
+
+.sad-img-div{
+  border:blue solid 1px;
+}
+
+
 
                /*-----------PAGE 3----------------*/
 
@@ -388,9 +403,18 @@ u.triple {
 }
 
 
-/*------------ANIMATIONS---------------*/
+/*------------Images---------------*/
 
+.sad-img{
+  width:100%;
+  margin:auto;
+}
 
+.down-arrow-img{
+  width:100%;
+  margin:auto;
+  padding:20px;
+}
 /* -------------------Bad place animation---------------------------*/
 
 
