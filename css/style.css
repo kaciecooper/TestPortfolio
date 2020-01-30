@@ -74,6 +74,14 @@ h2 {
   font-size: 40px;
 }
 
+.h2-italic {
+  font-family: farnham-display, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 40px;
+  text-align: center
+ }
+
 h3 {
   font-family: farnham-display, serif;
   font-weight: 300;
@@ -219,7 +227,6 @@ p {
 .blue{color:blue;}
 
 .page2-1,
-.page2-2,
 .page2-3,
 .page2-4,
 .page2-5,
@@ -233,7 +240,7 @@ p {
   grid-template-columns: 1fr;
   height: 200vh;
   padding: 40px;
-  line-height: 6em;
+  width:100%;
 }
 
 
@@ -247,8 +254,9 @@ p {
 }
 
 .page2-2{
-  margin:auto;
-  border:black solid 2px;
+  display:grid;
+  grid-template-columns:1fr;
+  height:100vh;
 }
 
 
@@ -265,13 +273,19 @@ p {
   }
 
 .pg2-text{
-  border:black solid 1px;
-  padding:50px;
+  margin:auto;
+  width:50%;
+  line-height:5em;
+  border-left:solid black 1px;
+  border-top:solid black 1px;
+  padding:10px;
 }
 
-
-.sad-img-div{
-  border:blue solid 1px;
+.because{
+  width:100%;
+  text-align:center;
+  padding-top:40px;
+  font-size:30px;
 }
 
 
@@ -407,13 +421,14 @@ u.triple {
 
 .sad-img{
   width:100%;
-  margin:auto;
+  padding-top:30px;
+
 }
 
 .down-arrow-img{
   width:100%;
   margin:auto;
-  padding:20px;
+  padding-top:20px;
 }
 /* -------------------Bad place animation---------------------------*/
 
