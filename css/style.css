@@ -14,7 +14,7 @@
 
   position: relative;  
 }
-
+*/
 
 
 
@@ -24,13 +24,12 @@
 .quote,
 {
   margin: auto;
-  color: #000;
+  z-index:99;
 }
 
 
 .quotebox1 {
   background-color: #fff;
-  color: red;
   height: 100vh;
   border-top: solid #000 1px;
 }
