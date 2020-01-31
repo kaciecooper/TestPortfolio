@@ -100,12 +100,14 @@ h5 {
   font-family: farnham-display, serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 90px;
+  font-size: 80px;
   color: #FF8900;
+  line-height:1em;
 }
 
 .good-h5 {
   font-style: normal;
+  /*text-decoration:underline  #3333FF;*/
 }
 
 p {
@@ -152,6 +154,7 @@ p {
 .attitude {
   font-weight: 800;
 }
+
 
 
 
@@ -312,7 +315,6 @@ p {
 
                /*-----------PAGE 3----------------*/
 
-.page3-1,
 .page3-2,
 .page3-3,
 .page3-4,
@@ -328,15 +330,35 @@ p {
   line-height: 6em;
 }
 
+
+
+
 .page3-10 {
   display: grid;
   height: 100vh;
-  padding: 40px;
   line-height: 6em;
 }
 
 .page3-1 {
-  background-color: #FFE3EB;
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+width:100%;  
+height:120vh;
+background: linear-gradient(356deg, #ffffff, #ffffff, #ffe3eb, #ffffff, #ffffff);
+background-size: 1000% 1000%;
+
+-webkit-animation: page3-1 26s ease infinite;
+animation: page3-1 26s ease infinite;
+}
+@-webkit-keyframes page3-1 {
+    0%{background-position:56% 0%}
+    50%{background-position:45% 100%}
+    100%{background-position:56% 0%}
+}
+@keyframes page3-1 {
+    0%{background-position:56% 0%}
+    50%{background-position:45% 100%}
+    100%{background-position:56% 0%}
 }
 
 .page3-4 {
@@ -352,6 +374,16 @@ p {
   grid-template-columns: 70% 30%;
 }
 
+.white-wave1,{
+margin:auto;
+height:100%;
+
+}
+.white-wave2{
+margin:auto;
+height:100%;
+
+}
 
   .pg3-million, .because-scroll{
     color:#FF8900;
@@ -374,6 +406,19 @@ p {
     color:#fff;
   }
 
+.good-day{
+  padding:50px;
+  border-right: solid 2px #fff;
+  border-left: solid 2px #fff;
+  margin:auto;
+}
+
+
+.attitude-stretch{
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
 /*------------Links and Buttons---------------*/
 
 .great,
@@ -419,11 +464,6 @@ a:hover {
 
 /* -- triple threat -- */
 
-u,
-u.triple {
-  border-bottom: 24px double #3333FF;
-  line-height: 2em;
-}
 
 
 /*------------Footer---------------*/
