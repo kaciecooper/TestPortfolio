@@ -1,23 +1,7 @@
 
-/*.pg2that-line span:after {
-  content: "";
-  position: absolute;
-  border-top: 4px black solid;
-  top:26px;
-  width: 250px;
-  margin-left: -2px;
+.page2{
+  width:100%;
 }
-
-
-
-.pg2that-line span {
-
-  position: relative;  
-}
-*/
-
-
-
 
 /*------------Quote---------------*/
 
@@ -236,6 +220,7 @@ p {
 .page2-10
 {
   display: grid;
+  border:red solid 2px;
   grid-template-columns: 1fr;
   height: 200vh;
   padding: 40px;
@@ -256,12 +241,10 @@ p {
   display:grid;
   grid-template-columns:1fr;
   height:100vh;
+  width:100%;
+  border:blue solid 2px;
 }
 
-
-.page2-9{
-  text-align:center;
-  }
 
 .good-strike{
   margin:auto;
@@ -273,7 +256,6 @@ p {
 
 .pg2-text{
   margin:auto;
-  width:50%;
   line-height:5em;
   border-left:solid black 1px;
   border-top:solid black 1px;
@@ -421,6 +403,7 @@ u.triple {
 .sad-img{
   width:100%;
   padding-top:30px;
+  margin:auto;
 
 }
 
