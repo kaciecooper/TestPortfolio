@@ -315,7 +315,6 @@ p {
 
                /*-----------PAGE 3----------------*/
 
-.page3-2,
 .page3-3,
 .page3-4,
 .page3-5,
@@ -361,6 +360,15 @@ animation: page3-1 26s ease infinite;
     100%{background-position:56% 0%}
 }
 
+.page3-2{
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 130vh;
+
+}
+
+
+
 .page3-4 {
   background-color: #3333FF;
 }
@@ -374,18 +382,38 @@ animation: page3-1 26s ease infinite;
   grid-template-columns: 70% 30%;
 }
 
-.white-wave1,{
-margin:auto;
-height:100%;
-
-}
-.white-wave2{
-margin:auto;
-height:100%;
-
+.good-face{
+  width:100%;
+  margin:auto;
+ 
 }
 
-  .pg3-million, .because-scroll{
+.million-div{
+    margin:auto;
+    color:#FF8900;
+    padding-bottom:100px;
+    border-bottom:solid 2px black; 
+  }
+
+
+
+
+.beyond-div{
+  margin:auto;
+}
+
+.gradient-wave1{
+
+  margin-top:-500px;
+  z-index:-10;
+  position:relative;
+  padding-top:50px;
+}
+
+
+
+
+  .because-scroll{
     color:#FF8900;
   }
 
@@ -407,7 +435,7 @@ height:100%;
   }
 
 .good-day{
-  padding:50px;
+  padding:30px;
   border-right: solid 2px #fff;
   border-left: solid 2px #fff;
   margin:auto;
