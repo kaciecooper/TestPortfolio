@@ -364,8 +364,25 @@ animation: page3-1 26s ease infinite;
   display: grid;
   grid-template-columns: 1fr;
   height: 130vh;
+  background: linear-gradient(356deg, #ffffff, #ffffff, #ffe3eb, #ffffff, #ffffff);
+  background-size: 1000% 1000%;
 
+-webkit-animation: page3-1 26s ease infinite;
+animation: page3-1 26s ease infinite;
 }
+
+@-webkit-keyframes page3-1 {
+    0%{background-position:56% 0%}
+    50%{background-position:45% 100%}
+    100%{background-position:56% 0%}
+}
+@keyframes page3-1 {
+    0%{background-position:56% 0%}
+    50%{background-position:45% 100%}
+    100%{background-position:56% 0%}
+}
+
+
 
 
 
@@ -388,29 +405,26 @@ animation: page3-1 26s ease infinite;
  
 }
 
+.white-wave3{
+  z-index:-10;
+  position:relative;
+  margin:auto;
+}
+
 .million-div{
     margin:auto;
+    margin-top:-500px;
     color:#FF8900;
+
     padding-bottom:100px;
     border-bottom:solid 2px black; 
   }
 
 
-
-
 .beyond-div{
   margin:auto;
+  margin-top:-200px;
 }
-
-.gradient-wave1{
-
-  margin-top:-500px;
-  z-index:-10;
-  position:relative;
-  padding-top:50px;
-}
-
-
 
 
   .because-scroll{
