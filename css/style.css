@@ -315,7 +315,6 @@ p {
 
                /*-----------PAGE 3----------------*/
 
-.page3-3,
 .page3-4,
 .page3-5,
 .page3-6,
@@ -326,16 +325,34 @@ p {
   grid-template-columns: 1fr;
   height: 100vh;
   padding: 40px;
+  width:100%;
   line-height: 6em;
+  border:solid 2px green;
 }
 
 
+.page3-3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+  padding: 40px;
+  width:100%;
+  line-height: 6em;
+  border:solid 2px green;
+}
 
+.good-face-blue{
+  
+  margin:auto;
+  width:100%;
+
+}
 
 .page3-10 {
   display: grid;
   height: 100vh;
   line-height: 6em;
+   border:solid 2px green;
 }
 
 .page3-1 {
@@ -345,6 +362,7 @@ width:100%;
 height:120vh;
 background: linear-gradient(356deg, #ffffff, #ffffff, #ffe3eb, #ffffff, #ffffff);
 background-size: 1000% 1000%;
+ border:solid 2px green;
 
 -webkit-animation: page3-1 26s ease infinite;
 animation: page3-1 26s ease infinite;
@@ -366,9 +384,10 @@ animation: page3-1 26s ease infinite;
   height: 130vh;
   background: linear-gradient(356deg, #ffffff, #ffffff, #ffe3eb, #ffffff, #ffffff);
   background-size: 1000% 1000%;
+   border:solid 2px green;
 
--webkit-animation: page3-1 26s ease infinite;
-animation: page3-1 26s ease infinite;
+-webkit-animation: page3-1 10s ease infinite;
+animation: page3-1 20s ease infinite;
 }
 
 @-webkit-keyframes page3-1 {
@@ -381,18 +400,24 @@ animation: page3-1 26s ease infinite;
     50%{background-position:45% 100%}
     100%{background-position:56% 0%}
 }
-
-
-
-
+.attitude-div{
+    margin:auto;
+    padding-left:50px;
+     padding-right:50px;
+    border-left:solid 2px #3333FF; 
+    border-right:solid 2px #3333FF; 
+}
 
 .page3-4 {
   background-color: #3333FF;
+   border:solid 2px green;
 }
 
 .page3-6 {
   background-color: #FF8900;
+   border:solid 2px green;
 }
+
 
 .line-because {
   display: grid;
@@ -423,7 +448,7 @@ animation: page3-1 26s ease infinite;
 
 .beyond-div{
   margin:auto;
-  margin-top:-200px;
+  margin-top:-60px;
 }
 
 
@@ -455,12 +480,6 @@ animation: page3-1 26s ease infinite;
   margin:auto;
 }
 
-
-.attitude-stretch{
-  animation-duration: 3s;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
-}
 /*------------Links and Buttons---------------*/
 
 .great,
