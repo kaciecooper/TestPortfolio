@@ -315,9 +315,7 @@ p {
                /*-----------PAGE 3----------------*/
 
 
-.page3-5,
-.page3-6,
-.page3-7,
+
 .page3-8,
 .page3-9 {
   display: grid;
@@ -339,7 +337,6 @@ p {
 }
 
 .good-face-blue{
-  
   margin:auto;
   width:100%;
 
@@ -405,9 +402,6 @@ animation: page3-1 20s ease infinite;
 }
 
 
-.page3-6 {
-  background-color: #FF8900;
-  }
 
 
 .line-because {
@@ -443,9 +437,7 @@ animation: page3-1 20s ease infinite;
 }
 
 
-  .because-scroll{
-    color:#FF8900;
-  }
+
 
 
   .beyond, .attitude-blue, .its-all, .theres-scroll{
@@ -453,12 +445,12 @@ animation: page3-1 20s ease infinite;
   }
 
 
-.page3-4{
+.page3-4, .page3-5{
 display: grid;
 grid-template-columns: 10% 90%;
-height: 130vh;
+
 width:100%;
-border:solid 2px gr;
+z-index:-20;
 background: linear-gradient(292deg, #ffffff, #3333ff, #ffe3eb, #ffffff);
 background-size: 800% 800%;
 
@@ -483,41 +475,164 @@ animation: AnimationName 30s ease infinite;
 
 }
 
-.pink-text-div{
-    background-color:blue;
+.pg3-4-text{
     height:100%;
     width:100%;
     margin:auto;
-    color:#FF8900;
-    border-left:solid 2px black;
+    color:#ffe3eb;
+    
+  border-width: 2px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      #3333FF,
+      rgba(255, 255, 255, 1) 
+   
+    ) 1 100%;
   }
+
+
 
 .pink-text{
    padding:60px;
+   margin-top:-650px;
+   position:absolute;
+
   }
+
+
 .only-if{
-  padding:60px;
+  color:#fff;
+  margin-left:-100px;
   margin-top:300px;
+  position:absolute;
 }
 
-.only-if-div{
+
+.blue-wave1{
+  position:relative;
+  width:100%;
+
+}
+
+
+
+
+.page3-5
+{
+  display: grid;
+  grid-template-columns: 10% 50% 30%;
+  width:100%;
+  height:120vh;
+ }
+
+
+.pg3-5-text{
+    padding-top:50px;
+    padding-left:40px;
+    width:100%;
+    padding-left:-120px;
+    color:#ffe3eb;
+    border-left:solid 2px #fff;
+}
+
+.pg3-4-because{
+  padding-top:400px;
+}
+
+
+.blue-wave2{
+  width:110%;
+  padding-left:24%;
+
+}
+  
+
+.page3-6
+{
+  display: grid;
+  grid-template-columns: 10% 90%;
+  width:100%;
+  height:80vh;
+ }
+
+.pg3-6-text
+{
+  color:#FF8900;
+  line-height:4em;
+  border-left: solid 2px #FF8900;
+  padding:40px;
+
+  border-width: 2px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      rgba(255, 255, 255, 0), 
+      #FF8900
+    ) 1 100%;
+
+}
+
+
+.good-face-arrow{
   margin:auto;
-  margin-top:-60px;
+  width:100%;
+  padding-top:40px;
 }
 
-  .not-true{
-    text-decoration: underline #FF8900;
-  }
 
-  .page3-6{
-    color:#fff;
-  }
+
 
 .good-day{
   padding:30px;
   border-right: solid 2px #fff;
   border-left: solid 2px #fff;
   margin:auto;
+}
+
+
+
+.page3-7
+{
+  height: 100vh;
+  width:100%;
+  line-height: 6em;
+ }
+
+.orange-wave1{
+  z-index:-1;
+ width:100%;
+
+}
+.even-if
+{
+display:grid;
+grid-template-columns: 10% 45% 45%;
+margin-top:-50%;
+
+
+}
+
+.pg3-badplace{
+  border-left:solid 2px  #FF8900 ;
+  padding:40px;
+
+}
+
+.pg3-7-because-div{
+  display:grid;
+  grid-template-columns: 1fr;
+  padding:40px;
+  padding-top:80px;
+  line-height:3em;
+
+}
+
+.pg-3-7empty-div{
+  border-top: solid 2px #FF8900 ;
+
 }
 
 /*------------Links and Buttons---------------*/
