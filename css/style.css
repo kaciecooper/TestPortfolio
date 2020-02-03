@@ -207,6 +207,13 @@ p {
   grid-template-columns: 1fr;
   height: 100vh;
   width: 100%;
+
+}
+
+
+.black-bars1, .black-bars2{
+  width:100%;
+  height:100%;
 }
 /*-----------section 3----*/
 
