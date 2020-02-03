@@ -275,6 +275,14 @@ p {
 }
 
 
+
+.bad-place {
+  margin: auto;
+  padding-bottom: 0;
+  border-bottom: black solid 1px
+  width:100%;
+}
+
 /*-----------section 5----*/
 
 .page2-5 {
@@ -391,23 +399,31 @@ p {
 
 
 
-.pg2-8-black-box1, .pg2-8-black-box2{
+.pg2-7-black-box1, .pg2-7-black-box2{
   background-color:#000;
 }
 
 
+/*-----------section 8----*/
 
-
-
-
-
-
-
-
-
-.goodness {
-  text-decoration: underline;
+.page2-8 {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  line-height: 5em;
+  height: 100vh;
+  border:solid 2px green;
+  width:100%;
 }
+
+.pg2-8-text{
+border-left:solid 1px #000;
+padding:40px;
+}
+
+
+
+
+
 
 
 
@@ -420,14 +436,6 @@ p {
   color: #000;
 }
 
-
-
-.bad-place {
-  margin: auto;
-  padding-bottom: 0;
-  border-bottom: black solid 1px
-  width:100%;
-}
 
 
 /*-----------PAGE 3----------------*/
