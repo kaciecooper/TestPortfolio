@@ -29,48 +29,41 @@ $(document).scroll(function() {
 
 ///////////////////////////////////////////////////////////////Sticky Quote
 
-
-
 ///////////////////////////////////////////////////////////////
-// init controller
-	var controller = new ScrollMagic.Controller();
 
-$(function () { // wait for document ready
-		// build scene
-		var scene = new ScrollMagic.Scene({triggerElement: "#quote-scroll", duration: 2000})
-						.setPin("#pin1")
-						//.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
-						.addTo(controller);
-	});
-///////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////PAGE 3////////////////////
+
+
+
+
+
+
+///////////////////////////////SECTION 1
+
 
 
   // init controller
   var controller = new ScrollMagic.Controller();
+  // build scene
+    new ScrollMagic.Scene({
+              triggerElement: "#trigger-good",
+              triggerHook: 1, // show, when scrolled 10% into view
+              duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
+              offset: 50 // move trigger to center of element
+            })
+            .setClassToggle("#reveal-good", "visible") // add class to reveal
+            .addIndicators({
 
-  // build tween
-  var tween = TweenMax.to("#animate", 0.5, {scale: 1.3, repeat: 1000, yoyo: true});
-
-  // build scene and set duration to window height
-  var scene = new ScrollMagic.Scene({triggerElement: "#breathe", duration: "100%"})
-          .setTween(tween)
-          .addIndicators() // add indicators (requires plugin)
-          .addTo(controller);
-
-
-///////////////////////////////////////////////////////////////////
-
-
+            name:"scroll",
+            colorStart:"pink",
 
 
+            }) // add indicators (requires plugin)
+            .addTo(controller);
 
 
-////////////////////////////////////////////////////////////////////
-
-
-
-
-
+/////////////////////////////////////////////////////////////////////////////
 
 
 
