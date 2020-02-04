@@ -279,7 +279,7 @@ p {
 .bad-place {
   margin: auto;
   padding-bottom: 0;
-  border-bottom: black solid 1px
+  border-bottom: black solid 1px;
   width:100%;
 }
 
