@@ -319,7 +319,7 @@ p {
 .boxed-satisfaction{
   border:solid 1px #000;
   padding:30px;
-  width:100%
+  width:100%;
   margin:auto;
 }
 
@@ -354,7 +354,6 @@ p {
   grid-template-columns: 1fr 1fr;
   padding-bottom:50px;
   padding-top:80px;
-  padding-bottom:80px;
 } 
 
 
