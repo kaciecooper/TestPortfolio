@@ -42,13 +42,11 @@ $(document).scroll(function() {
               offset: 50 // move trigger to center of element
             })
             .setClassToggle("#reveal-good", "visible") // add class to reveal
-            .addIndicators({
+            .addIndicators(
 
-            name:"scroll",
-            colorStart:"pink",
+          
 
-
-            }) // add indicators (requires plugin)
+            ) // add indicators (requires plugin)
             .addTo(controller);
 
 
@@ -64,10 +62,6 @@ $(document).scroll(function() {
           .setTween(tween)
           .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
-
-
-
-
 
 
 

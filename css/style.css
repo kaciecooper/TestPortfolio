@@ -1,3 +1,6 @@
+
+
+
   .panel {
     height: 100%;
     width: 100%;
@@ -111,31 +114,60 @@ p {
 
 /*-----------section 2----*/
 
-
-.quote {
-  margin: auto;
-  z-index: 99;
-  color: #000;
+.quote{
+  font-family: farnham-display, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
   text-align: center;
-  padding-top: 100px;
 }
 
 .quotebox1 {
-  background-color: #fff;
-  height: 100vh;
+
   border-top: solid #000 1px;
   width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100vh;
+
+
 }
 
+.quote{
+  font-family: farnham-display, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+  z-index:10;
+}
+
+.quote-scroll {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+}
+
+.quote-scroll-white {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+  color:#fff;
+}
 .quotebox2 {
   background-color: #000;
   height: 100vh;
+  width:100%;
 }
 
 .quotebox3 {
   background-color: #fff;
   height: 100vh;
+  width:100%;
 }
+
+
 
 
 /*-----------section 3----*/
