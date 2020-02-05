@@ -1,6 +1,5 @@
 
 
-
   .panel {
     height: 100%;
     width: 100%;
@@ -129,25 +128,35 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  height: 100vh;
+  height: 120vh;
 
 
 }
 
-.quote{
+.quote1, .quote2, .quote3{
   font-family: farnham-display, serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
   z-index:10;
-}
+ }
 
 .quote-scroll {
   position: -webkit-sticky;
   position: sticky;
   top: 4rem;
+  padding-top:70px;
 }
+
+
+.quote-scroll3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+  padding-bottom:120px;
+}
+
 
 .quote-scroll-white {
   position: -webkit-sticky;
@@ -157,13 +166,13 @@ p {
 }
 .quotebox2 {
   background-color: #000;
-  height: 100vh;
+  height: 120vh;
   width:100%;
 }
 
 .quotebox3 {
   background-color: #fff;
-  height: 100vh;
+  height: 120vh;
   width:100%;
 }
 

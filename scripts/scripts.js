@@ -64,6 +64,18 @@ $(document).scroll(function() {
           .addTo(controller);
 
 
+// build scene
+    new ScrollMagic.Scene({
+              triggerElement: "#trigger-quote",
+              triggerHook: 0.9, // show, when scrolled 10% into view
+              duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
+              offset: 50 // move trigger to center of element
+            })
+            .setClassToggle("#reveal-quote", "visible") // add class to reveal
+            .addIndicators() // add indicators (requires plugin)
+            .addTo(controller);
+
+
 
 
 });
