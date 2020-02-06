@@ -78,10 +78,6 @@ $(document).scroll(function() {
 
 
 
-
-
-
-
 });
 
 
