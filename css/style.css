@@ -1,9 +1,5 @@
 
 
-  .panel {
-    height: 100%;
-    width: 100%;
-  }
 
 
 /*------------Type---------------*/
@@ -253,7 +249,7 @@ p {
 .page2-3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  line-height: 5em;
+  line-height: .5em;
   height: 150vh;
   width:100%;
 }
