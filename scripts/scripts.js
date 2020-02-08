@@ -42,11 +42,6 @@ $(document).scroll(function() {
               offset: 50 // move trigger to center of element
             })
             .setClassToggle("#reveal-good", "visible") // add class to reveal
-            .addIndicators(
-
-          
-
-            ) // add indicators (requires plugin)
             .addTo(controller);
 
 
@@ -60,33 +55,9 @@ $(document).scroll(function() {
   // build scene and set duration to window height
   var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "100%"})
           .setTween(tween)
-          .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
 
 
-// build scene
-    new ScrollMagic.Scene({
-              triggerElement: "#trigger-quote",
-              triggerHook: 0.9, // show, when scrolled 10% into view
-              duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
-              offset: 50 // move trigger to center of element
-            })
-            .setClassToggle("#reveal-quote", "visible") // add class to reveal
-            .addIndicators() // add indicators (requires plugin)
-            .addTo(controller);
-
-
-// init controller
-  var controller = new ScrollMagic.Controller();
-
-  // build tween
-  var tween = TweenMax.to("#animate-bad", 0.5, {scale: 3, repeat: 5, yoyo: true});
-
-  // build scene and set duration to window height
-  var scene = new ScrollMagic.Scene({triggerElement: "#bad-place-trigger", duration: "100%"})
-          .setTween(tween)
-          .addIndicators() // add indicators (requires plugin)
-          .addTo(controller);
 
 
 

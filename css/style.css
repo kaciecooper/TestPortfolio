@@ -1,6 +1,4 @@
 
-
-
 /*------------Type---------------*/
 
 h1 {
@@ -136,6 +134,10 @@ p {
   text-align: center;
   z-index:10;
  }
+
+.quote2, .quote3{
+  visibility:hidden;
+}
 
 .quote-scroll {
   position: -webkit-sticky;
