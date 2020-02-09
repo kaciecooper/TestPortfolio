@@ -1,28 +1,5 @@
 
 
-.cd-section {
-  height: 100vh;
-}
-.cd-section:first-of-type > div {
-  background-color: #fff;
-}
-.cd-section:nth-of-type(2) > div {
-  background-color: #fff;
-}
-.cd-section:nth-of-type(3) > div {
-  background-color: #fff;
-}
-.cd-section:nth-of-type(4) > div {
-  background-color: #ffff;
-}
-.cd-section:nth-of-type(5) > div {
-  background-color: #ffff;
-}
-[data-animation="parallax"] .cd-section > div {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /*------------Type---------------*/
 
@@ -211,27 +188,35 @@ transition: all 1s ease-out;
 /*-----------section 3----*/
 
 
-.how {
-  font-family: farnham-display, serif;
-  font-weight: 400;
-  font-style: italic;
-}
 
-.questionbox {
+
+.page1-3 {
   display: grid;
   grid-template-columns: 10% 80% 10%;
   border-top: black solid 1px;
+
 }
 
-.question {
-  border: solid black 1px;
-  margin: auto;
-  padding: 10px;
+
+.cursor-section{
+  background: url("../images/how_how.svg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.question-section {
-  text-align: center;
-  font-size: 3em;
+.question-left{
+ cursor: url("../images/cursor-left-arrow.svg"), default;
+
+}
+.question-right{
+   cursor: url("../images/cursor-right-arrow.svg"), default;
+
+}
+
+.question{
+  z-index:99;
 }
 
 .terrible-box {
@@ -306,6 +291,7 @@ transition: all 1s ease-out;
 .redo-div {
   margin: auto;
 }
+
 
 .pg2-text {
   margin: auto;
@@ -397,13 +383,25 @@ transition: all 1s ease-out;
   margin:auto;
 }
 
-
 .pg3-5-hr{
-  border-bottom:solid 5px #000;
-  height:25px;
-  margin:0;
+  display:flex;
+ border: 0;
+    height: 5px;
+    border-bottom: 5px solid #000;
+  align-items:center;
+   width:100%;
+    padding-top:10px;
+  
+
 }
 
+/*
+.pg3-5-hr{
+  border-bottom:solid 5px #000;
+  height:5px;
+  margin:0;
+}
+*/
 /*-----------section 6----*/
 
 
@@ -468,9 +466,9 @@ width: 100%;
 height: 100%;
 text-align: center;
 /* Starting position */
--moz-transform:translateX(70%);
--webkit-transform:translateX(70%); 
-transform:translateX(70%);
+-moz-transform:translateX(20%);
+-webkit-transform:translateX(20%); 
+transform:translateX(20%);
 /* Apply animation to this element */ 
 -moz-animation: scroll-left 5s linear infinite;
 -webkit-animation: scroll-left 5s linear infinite;
@@ -478,23 +476,23 @@ animation: scroll-left 5s linear infinite;
 }
 /* Move it (define the animation) */
 @-moz-keyframes scroll-left {
-0% { -moz-transform: translateX(50%); }
-100% { -moz-transform: translateX(-50%); }
+0% { -moz-transform: translateX(100%); }
+100% { -moz-transform: translateX(-100%); }
 }
 @-webkit-keyframes scroll-left {
-0% { -webkit-transform: translateX(50%); }
-100% { -webkit-transform: translateX(-50%); }
+0% { -webkit-transform: translateX(100%); }
+100% { -webkit-transform: translateX(-100%); }
 }
 @keyframes scroll-left {
 0% { 
--moz-transform: translateX(50%); /* Browser bug fix */
--webkit-transform: translateX(50%); /* Browser bug fix */
-transform: translateX(50%); 
+-moz-transform: translateX(100%); /* Browser bug fix */
+-webkit-transform: translateX(100%); /* Browser bug fix */
+transform: translateX(100%); 
 }
-50% { 
--moz-transform: translateX(-50%); /* Browser bug fix */
--webkit-transform: translateX(-50%); /* Browser bug fix */
-transform: translateX(-5s0%); 
+100% { 
+-moz-transform: translateX(-100%); /* Browser bug fix */
+-webkit-transform: translateX(-100%); /* Browser bug fix */
+transform: translateX(-100%); 
 }
 }
 
@@ -508,9 +506,9 @@ text-align: center;
 -webkit-transform:translateX(100%); 
 transform:translateX(100%);
 /* Apply animation to this element */ 
--moz-animation: scroll-right 5s linear infinite;
--webkit-animation: scroll-right 5s linear infinite;
-animation: scroll-right 5s linear infinite;
+-moz-animation: scroll-right 7s linear infinite;
+-webkit-animation: scroll-right 7s linear infinite;
+animation: scroll-right 7s linear infinite;
 }
 /* Move it (define the animation) */
 @-moz-keyframes scroll-right {
@@ -538,34 +536,35 @@ transform: translateX(-100%);
 width: 100%;
 height: 100%;
 text-align: center;
+
 /* Starting position */
--moz-transform:translateX(70%);
--webkit-transform:translateX(70%); 
-transform:translateX(70%);
+-moz-transform:translateX(100%);
+-webkit-transform:translateX(100%); 
+transform:translateX(100%);
 /* Apply animation to this element */ 
--moz-animation: scroll-left 5s linear infinite;
--webkit-animation: scroll-left 5s linear infinite;
-animation: scroll-left 5s linear infinite;
+-moz-animation: scroll-left 8s linear infinite;
+-webkit-animation: scroll-left 8s linear infinite;
+animation: scroll-left 8s linear infinite;
 }
 /* Move it (define the animation) */
 @-moz-keyframes scroll-left {
-0% { -moz-transform: translateX(50%); }
-100% { -moz-transform: translateX(-50%); }
+0% { -moz-transform: translateX(100%); }
+100% { -moz-transform: translateX(-100%); }
 }
 @-webkit-keyframes scroll-left {
-0% { -webkit-transform: translateX(50%); }
-100% { -webkit-transform: translateX(-50%); }
+0% { -webkit-transform: translateX(100%); }
+100% { -webkit-transform: translateX(-100%); }
 }
 @keyframes scroll-left {
 0% { 
--moz-transform: translateX(50%); /* Browser bug fix */
--webkit-transform: translateX(50%); /* Browser bug fix */
-transform: translateX(50%); 
+-moz-transform: translateX(100%); /* Browser bug fix */
+-webkit-transform: translateX(100%); /* Browser bug fix */
+transform: translateX(100%); 
 }
-50% { 
--moz-transform: translateX(-50%); /* Browser bug fix */
--webkit-transform: translateX(-50%); /* Browser bug fix */
-transform: translateX(-5s0%); 
+100% { 
+-moz-transform: translateX(-100%); /* Browser bug fix */
+-webkit-transform: translateX(-100%); /* Browser bug fix */
+transform: translateX(-100%); 
 }
 }
 
@@ -625,6 +624,8 @@ border-bottom: solid 1px #000;
   line-height: 5em;
   height: 90vh;
   width:100%;
+  cursor: url("../images/cursor-right-arrow.svg"), default;
+
 }
 
 .pg2-8-line{
@@ -848,7 +849,7 @@ border-bottom: solid 1px #000;
 
   100% {
     background-position: 4% 0%;
-  }*/
+  }
 }
 
 .pg3-4-text {
@@ -1045,9 +1046,13 @@ width:100%;
 }
 
 a:hover {
-  color: red;
+  color: gray;
 }
 
+.great a:hover{
+  color:#FF8900;
+
+}
 .terrible, .home-link {
   font-family: trade-gothic-next-condensed, sans-serif;
   font-weight: 400;
