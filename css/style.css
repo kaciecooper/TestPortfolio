@@ -44,7 +44,7 @@ h2 {
 h3 {
   font-family: farnham-display, serif;
   font-weight: 300;
-  font-style: normal;
+  font-style: normal;pp
   font-size: 40px;
   line-height: 1em;
   text-align: center;
@@ -660,8 +660,8 @@ border-bottom: solid 1px #000;
   height: 120vh;
   background: linear-gradient(356deg, #ffffff, #ffffff, #ffe3eb, #ffffff, #ffffff);
   background-size: 1000% 1000%;
-  -webkit-animation: page3-1 50s ease infinite;
-  animation: page3-1 50s ease infinite;
+  -webkit-animation: page3-1 20s ease infinite;
+  animation: page3-1 20s ease infinite;
 }
 
 @-webkit-keyframes page3-1 {
@@ -711,8 +711,8 @@ border-bottom: solid 1px #000;
   height: 130vh;
   background: linear-gradient(356deg, #ffffff, #ffffff, #ffe3eb, #ffffff, #ffffff);
   background-size: 1000% 1000%;
-  -webkit-animation: page3-1 10s ease infinite;
-  animation: page3-1 20s ease infinite;
+  -webkit-animation: page3-1 20s infinite;
+  animation: page3-1 20s  infinite;
 }
 
 @-webkit-keyframes page3-1 {
@@ -805,9 +805,9 @@ border-bottom: solid 1px #000;
 
  background: linear-gradient(292deg, #ffffff, #3333ff, #ffe3eb, #ffffff);
   background-size: 800% 800%;
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
+  -webkit-animation: AnimationName 10s  infinite;
+  -moz-animation: AnimationName 10s infinite;
+  animation: AnimationName 10s infinite;
 }
 
 @-webkit-keyframes AnimationName {
@@ -996,6 +996,7 @@ width:100%;
   grid-template-columns: 10% 90%;
   height: 100vh;
   width:100%;
+  cursor: url("../images/cursor-left-arrow.svg"), default;
 }
 
 
