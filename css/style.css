@@ -919,8 +919,36 @@ a:hover {
     line-height: .5em;
   }
   .real-1, .real-2, .real-3 {
-    font-size: 15px;
-    line-height: 5em;
-  }
-  @  media only screen and (min-width: 1024px) {
+    font-size: 15px; 
+}
+
+.page2-1 {
+  background-position: contain;
+}
+/*-----------section 2----*/
+
+.fading-text{
+  margin-top:400px;
+}
+.fade5, .fade6, .fade7, .fade8,.fade9,.fade10, .fade11, .fade12, .fade13, .fade14 {
+display:none;
+}
+
+.pg3-5-hr {
+  width: 80%;
+ }
+
+.white-wave1, .white-wave2, .white-wave3 {
+ display:none;
+}
+
+.last-badday {
+  padding-top: 90%;
+}
+
+
+  @media only screen and (min-width: 1024px) {
+
+
+
     @media only screen and (min-width: 1200px) {
