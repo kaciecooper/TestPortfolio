@@ -67,12 +67,18 @@ p {
   font-size: 20px;
   text-align: center;
 }
-/*-----------PAGE ONE----------------*/
+/*-----------LANDING----------------*/
+
+.landing{
+  display:grid;
+  grid-template-columns: 10% 90%;
+}
+
 
 /*-----------section 1----*/
 
 .nav-div {
-  display: grid;
+
  /* grid-template-columns: 10% 90%;
   height: 100vh;*/
 }
@@ -88,17 +94,101 @@ p {
   color: #FF8900;
   display: none;
 }
-/*-----------section 2----*/
+/*-----------NAV----*/
 
 
+nav{
+  display:grid;
+  grid-template-columns:10% 70% 20%;
+
+  height:10vh;
+  margin:auto;
+  padding-top:10px;
+}
+
+
+
+.social-nav{
+
+    display:flex;
+    border-bottom:none;
+
+}
+
+.contact-nav{
+
+text-align: left;
+  border-bottom:solid 1px #000;
+}
+
+
+
+
+.main-nav{
+    display:flex;
+    border-left:solid 1px #000;
+  border-bottom:solid 1px #000;
+    width:100%;
+}
+
+
+a{
+color:#000;
+text-decoration:none;
+display:flex;
+font-family: work-sans, sans-serif;
+font-weight: 200;
+font-style: normal;
+font-size:14px;
+margin:20px;
+
+}
 
 
 /*-----------ACCORDIAN---------------*/
 
+/*
+.horizontal-scroll-wrapper {
+  width: 100px;
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+.horizontal-scroll-wrapper > div {
+  width: 100px;
+  height: 100px;
+}
+
+.horizontal-scroll-wrapper {
+  ...
+  transform: rotate(-90deg);
+  transform-origin: right top;
+}
+
+
+.horizontal-scroll-wrapper > div {
+  ...
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+
+
+.horizontal-scroll-wrapper {
+  ...
+  transform:rotate(-90deg) translateY(-100px);
+  ...
+}
+
+*/
+
+
+
 
 
 body {
-  background: #f4f4f4;
+  width:100%;
   color: #000;
 }
 
@@ -118,10 +208,11 @@ label {
   display: block;
   float: left;
   height: 100vh;
-  width: 40px;
+  width: 30px;
   overflow: hidden;
   text-align: center;
-  border:solid 1px #000;
+  border-right:solid 1px #000;
+  border-left:solid 1px #000;
   font-size: 14px;
   line-height: 50px;
   -webkit-transition: background 300ms ease;
@@ -133,7 +224,7 @@ li:nth-child(even) > input + label {
 
 label:hover,
 li:nth-child(even) > input + label:hover {
-  color: #000;
+  color: blue;
   cursor: pointer;
 }
 
@@ -145,13 +236,12 @@ input[type="radio"]:checked ~ label {
 
 /* SLIDES */
 .accslide {
-  display: block;
   height: 100%;
   width: 0px;
   padding: 10px 0;
   float: left;
   overflow-x: hidden;
-  font-sizes: 12px;
+  font-size: 12px;
   line-height: 1.5;
   -webkit-transition: all 700ms ease;
   transition: all 700ms ease;
@@ -165,14 +255,15 @@ input[type="radio"]:checked ~ label {
 
 input[type="radio"]:not(:checked) ~ label > * {
   padding-left: 7px;
-  font-size: 1.2em;
+  font-size: 14px;
   white-space: nowrap;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
 input[type="radio"]:checked ~ label > * {
-  display: none;
+    -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 li:nth-child(1):nth-last-child(2) input[type="radio"]:checked ~ .accslide {
