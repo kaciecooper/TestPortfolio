@@ -52,6 +52,30 @@ $(function() {
     live: true // default
   })
   wow.init()
-  //////////////////////////////////////////////////////////////////////////
+
+
+// init controller
+  var controller = new ScrollMagic.Controller({vertical: false});
+
+  // build tween
+  var tween = TweenMax.to("#target", 0.5, {backgroundColor: "green", width: "+=400"});
+
+  // build scene
+  var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 500})
+          .setTween(tween)
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+            //////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////////
 });
+
+
+var section = $('li');
+
+function toggleAccordion() {
+  section.removeClass('active');
+  $(this).addClass('active');
+}
+
+section.on('click', toggleAccordion);
