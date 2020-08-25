@@ -1,67 +1,75 @@
+
+body{
+  background-color:#F9F7F6;
+}
+
+
+
+
+@font-face {
+    font-family: 'GrandSlang';
+    src: url('font/GrandSlang-B-Side.woff') format('woff'),
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'GrandSlang';
+    src: url('font/GrandSlang-Italic.woff') format('woff'),
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'NittiGrotesk';
+    src: url('font/NittiGrotesk-Normal.woff') format('woff'),
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'NittiGrotesk';
+    src: url('font/NittiGrotesk-Medium.woff') format('woff'),
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: 'NittiGrotesk';
+    src: url('font/NittiGrotesk-Bold.woff') format('woff'),
+    font-weight: bold;
+}
+
+
 /*------------Type---------------*/
 
 h1 {
-  font-family: farnham-display, serif;
+  font-family: GrandSlang, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 80px;
   text-align: center;
 }
 .italic {
-  font-family: farnham-display, serif;
+  font-family: GrandSlang, serif;
   font-weight: 400;
   font-style: italic;
   font-size: 80px;
   text-align: center;
 }
 h2 {
-  font-family: trade-gothic-next, sans-serif;
+  font-family: NittiGrotesk, sans-serif;
   font-weight: 300;
-  font-style: normal;
+  font-style: medium;
   font-size: 40px;
 }
 .bold {
-  font-family: trade-gothic-next, sans-serif;
+  font-family: NittiGrotesk, sans-serif;
   font-weight: 700;
-  font-style: normal;
+  font-style: bold;
   font-size: 40px;
 }
-.h2-italic {
-  font-family: farnham-display, serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 40px;
-  text-align: center;
-}
-h3 {
-  font-family: farnham-display, serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 40px;
-  line-height: 1em;
-  text-align: center;
-}
-h4 {
-  font-family: trade-gothic-next, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 40px;
-}
-h5 {
-  font-family: farnham-display, serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 80px;
-  color: #FF8900;
-  line-height: 1em;
-}
-.good-h5 {
-  font-style: normal;
-  /*text-decoration:underline  #3333FF;*/
-  ;
-}
+
 p {
-  font-family: trade-gothic-next-condensed, sans-serif;
+  font-family: NittiGrotesk, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
@@ -73,7 +81,6 @@ p {
   display:grid;
   grid-template-columns: 10% 90%;
 }
-
 
 /*-----------section 1----*/
 
@@ -224,7 +231,7 @@ li:nth-child(even) > input + label {
 
 label:hover,
 li:nth-child(even) > input + label:hover {
-  color: blue;
+  color: rgb(237, 100, 50);
   cursor: pointer;
 }
 
